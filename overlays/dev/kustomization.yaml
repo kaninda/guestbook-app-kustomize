@@ -6,8 +6,10 @@ namespace: test-dev
 resources:
 - ../../base
 
-patches:
-- path: guestbook-ui-deployment.yaml
+replicas:
+- name: guestbook-ui
+  count: 2
+
 
 
 
